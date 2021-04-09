@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/UXportfolio.css">
+    <script src="js/UXPortfolio.js"></script>
+    <script src="https://kit.fontawesome.com/a3eade934b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="container">
+<header class="projectHeader">
+    <a id="logo" href="index.html"><img src="imgs/CH_Logo.png" alt="Site Logo"></a>
+    <nav class="menu">
+        <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+        </div>
+        <a id="current" href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+    </div>
+</header>
+
+<main>
+<section>
+    <div class="contactContainer">
+        <h1>Get in Touch</h1>
+        <p class="contactGraph">I'm always open to new opportunities, so feel free to contact me with a project that you have in mind. I would love to hear about it!</p>
+    </div>
+
+    <div class="contactForm">
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Your Message:</label><br>
+        <input type="text" id="message" name="message" required><br>
+
+        <input type="submit" id="button" value="Submit">
+    </form>
+    </div>
+</section>
+
+</main>
+</div>
+            
+
+
+<footer>
+    <span>
+        <a href="http://www.linkedin.com/in/clarissa-hamilton" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> 
+        <a href="https://www.instagram.com/rizzathegreat" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    </span><br>
+    <span><a href="index.html">Work</a></span> 
+    <span><a href="about.html">About</a></span>
+    <span><a href="contact.html">Contact</a></span>
+    <p class="copyright">© 2021 Clarissa Hamilton</p>
+</footer>
+    
+
+<script>
+    // Javascript for sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+    
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+    });
+    
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+    });
+</script>
+</body>
+</html>

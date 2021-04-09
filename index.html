@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UX Portfolio</title>
+    <link rel="stylesheet" href="css/UXportfolio.css">
+    <script src="js/UXPortfolio.js"></script>
+    <script src="https://kit.fontawesome.com/a3eade934b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="index.html"><img src="imgs/CH_Logo.png" alt="Site Logo"></a>
+        <nav class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a id="current" href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+
+    <section>
+    <div id="heroContainer">
+        <div class="intro">
+            <h1 class="heroGreeting">Hello!</h1>
+            <p class="heroMessage">My name is Clarissa! I'm a UX Designer based in NYC. I create engaging experiences that simplify the lives of everyday people.</p>
+            <button id="heroButton" onclick="scrollDown()"> View My Work <br><br><i class="fas fa-chevron-down"></i></button>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div id="scrollContent">
+    <div class="container">
+    <img class="projectImg" src="imgs/Gallery/36Gallery.jpg" alt="BrucnchSpot Project Image">
+    <div class="projectDetails">
+        <h2>36 Under 36</h2>
+        <p class="description">Each year The Jewish Week creates a special issue, that highlights 36 Jewish individuals under the age of 36, making a difference in their community. I was asked to design the cover for the 2020 issue.</p><br>
+        <a class="projectLink" href="36Under36.html">View Project &nbsp; ></a>
+    </div>
+    </div>
+
+    <div class="container">
+    <img class="projectImg" src="imgs/Gallery/LectureLab.jpg" alt="BrucnchSpot Project Image">
+    <div class="projectDetails">
+        <h2>Lecture Lab</h2>
+        <p class="description">LectureLab was the concept for a tutoring platform designed to connect tutors and students. As a new startup they were looking to develop their brand. My role was to create their logo, and brand guidelines.</p><br>
+        <a class="projectLink" href="LectureLab.html">View Project &nbsp; ></a>
+    </div>
+    </div>
+    </div>
+    </section>
+    
+
+
+    <footer class="home">
+        <span>
+            <a href="http://www.linkedin.com/in/clarissa-hamilton" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> 
+            <a href="https://www.instagram.com/rizzathegreat" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </span><br>
+        <span><a class="footerMenu" href="index.html">Work</a></span> 
+        <span><a class="footerMenu" href="about.html">About</a></span>
+        <span><a class="footerMenu" href="contact.html">Contact</a></span>
+        <p class="copyright">© 2021 Clarissa Hamilton</p>
+    </footer>
+
+
+<script>
+
+    // Javascript for click to scroll
+    
+    function scrollDown(){
+        document.getElementById('scrollContent').scrollIntoView({behavior: "smooth"});
+    }
+    
+    
+    // Javascript for sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+    
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+    });
+    
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+    });
+</script>
+</body>
+</html>

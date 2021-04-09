@@ -1,0 +1,1208 @@
+/*      ------------------      ALL SCREENS      ------------------      */
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+body{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+    color: #222222;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: .025rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*  Typography and Icons  */
+
+
+.fab{
+    font-size: 1.25rem;
+    padding-bottom: .75rem;
+}
+
+.fab:hover{
+    color: #75cdd8;
+}
+
+
+.fas{
+    font-size: 1rem;
+}
+
+
+
+
+/*  Header and Main Navigation  */
+header{
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+}
+
+#logo{
+    margin-top: 1rem;
+}
+
+
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 2rem;
+    color: #1d2b2e;
+}
+
+header .menu a:hover{
+    color: #75cdd8;
+    text-decoration: overline;
+    font-weight: 700;
+}
+
+#current{
+    color: #75cdd8;
+    font-weight: 700;
+    text-decoration: overline;
+}
+
+
+.btn{
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-btn, .close-btn{
+    font-size: 1.5rem;
+}
+
+
+.projectHeader .btn{
+    color: #1d2b2e;
+}
+
+
+
+
+
+
+/* || Footer */
+
+footer{ 
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+    margin-top: 200px;
+    text-align: center;
+    background-color: #1d2b2e;
+    color: #F2F2F2;
+    font-weight: 300;
+    display: block;
+}
+
+.home{
+    margin-top: 0px;
+}
+
+footer a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0px 10px 0px 10px;
+    font-size: 0.875rem;
+}
+
+footer a:hover{
+    color:#75cdd8;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+.copyright{
+    font-size: 0.625rem;
+    padding-top: .5rem;
+}
+
+
+
+
+
+
+/*    ------------  Landing Page   ------------   */
+
+
+#heroContainer{
+    text-align: center;
+    position: relative;
+    color: #FFFFFF;
+    height: 100vh;
+    overflow: hidden;
+    background: url("../imgs/Hero.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+}
+
+
+
+/* Projects Gallery */
+
+.projectLink {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.projectLink:hover {
+    color: #75cdd8;
+    font-size: 1rem;
+}
+
+
+
+
+
+/*    ------------  Projects Page   ------------   */
+
+
+
+/*  Buttons */
+
+.LLButton{
+    background-color: #5b5b5b;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.5%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.LLButton:hover{
+    background-color: #A6D062;
+}
+
+
+.thirtyButton{
+    background-color: #5b5b5b;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.5%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.thirtyButton:hover{
+    background-color: #2AA8CC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      ------------------      SMALL DESKTOP SCREEN      ------------------      */
+@media screen and (min-width:300px){
+
+html,body{
+    font-size: 0.9375rem;
+    font-weight: 300;
+    letter-spacing: .02rem;
+    line-height: 1.6rem;
+}
+
+
+
+/*  Header and Main Navigation  */
+
+.projectHeader{
+    position: relative;
+}
+
+#logo{
+    margin-left: .75rem;
+}
+
+
+header .btn{
+    display: block;
+}
+
+header .menu{
+    position: fixed;
+    background-color: #c0c7c8;
+    flex-direction: column;
+    min-width: 250px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.75s;
+    transition-property: right;
+}
+
+header .menu.active{
+    right: 0;
+}
+
+
+header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    margin-top: 3rem;
+}
+
+header .menu a{
+    display: block;
+    font-size: .9375rem;
+    margin: 1rem;
+    padding: 0 1rem;
+}
+
+
+header .menu a:hover{
+    color: #2AA8CC;
+}
+
+    
+#current{
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: overline;
+}
+
+.btn{
+    margin-right:2rem;
+}
+
+
+
+
+
+
+/*    ------------  Landing Page   ------------   */
+
+/*    Hero Section    */
+
+.intro{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%; 
+    position: absolute;
+    top: 33%;
+    vertical-align: middle;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+
+.heroGreeting{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 4%;
+}
+
+
+.heroMessage{
+    font-size: .9375rem;
+    margin-top: 5%;
+}
+
+
+#heroButton{
+    background-color: #75cdd8;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .85em;
+    letter-spacing: .05rem;
+    font-weight: 300;
+    margin-top: 1.25rem;
+    padding: 1rem;
+    padding-bottom: .5rem;
+    width: 8rem;
+    display: inline-block;
+    border: none;
+}
+
+
+#heroButton:hover{
+    background-color: #5b5b5b;
+    color: #ffffff;
+    border: none;
+}
+
+#heroButton:active{
+    outline: none;
+}
+
+#heroButton:focus{
+    outline: none;
+}
+
+
+
+
+/*    Projects Gallery    */
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.projectImg{
+    width: 100%;
+    opacity: 100%;
+}
+
+.projectDetails{
+    width: 100%;
+    padding-top: 3%;
+    display: inline-block;
+    margin-bottom: 8%;
+}
+
+
+.description{
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+
+.projectLink {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+}
+
+.projectLink:hover {
+    color: #2AA8CC;
+    font-size: 1rem;
+}
+
+
+
+
+
+/*    ------------  Projects Page   ------------   */
+
+.projectContainer{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+.smallProjectContainer{
+    width: 47%;
+    margin: 0 auto;
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.HalfSize{
+    display: block;
+    margin-bottom: 8%;
+}
+
+.projectSpecs{
+    width: 48%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-block;
+    float: left;
+}
+
+.projectTitle{
+    margin-top: 4%;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.projectTitleSmall{
+    font-size: 1.25rem;
+    font-weight: 200;
+    font-family: 'Rubik', sans-serif;
+    margin-top: .5rem;
+}
+
+.caption{
+    font-size: 0.625rem;
+}
+
+.LLButton{
+    font-size: .75rem;
+}
+
+.thirtyButton{
+    font-size: .75rem;
+}
+
+
+
+
+/*    ------------  About Page   ------------   */
+
+
+.aboutContainer{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.aboutDetails{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: block;
+    line-height: 1.85rem;
+}
+
+.skillList{
+    line-height: 1.75rem;
+}
+
+
+h1{
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+.about{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: .5rem;
+}
+
+.resume{
+    padding: 1rem;
+    background-color: #75cdd8;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: .875rem;
+}
+
+.resume:hover{
+    background-color: #535152;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.skills{
+    width: 48%;
+    margin-right: 1%;
+    display: inline-block;
+    float: left;
+}
+
+
+
+
+
+
+
+/*    ------------  Contact Page   ------------   */
+
+
+.contactContainer{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contactForm{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 3.5rem;
+}
+
+
+#name{
+    width: 100%;
+    height: 40px;
+    padding:1%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: #c6c6c6;
+    border: none;
+    font-size: .9rem;
+    border-radius: .5rem;
+}
+
+#email{
+    width: 100%;
+    height: 40px;
+    padding:1%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: #c6c6c6;
+    border: none;
+    font-size: .9rem;
+    border-radius: .5rem;
+}
+
+#message{
+    width: 100%;
+    height: 200px;
+    padding:1%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    background-color: #c6c6c6;
+    border: none;
+    font-size: .9rem;
+    border-radius: .5rem;
+}
+
+#button{
+    width: 100%;
+    float: left;
+    height: 50px;
+    border: none;
+    margin-top: 5%;
+    background-color: #75cdd8;
+    color: #000000;
+    font-size: .9rem;
+    letter-spacing: .0325rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+#button:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*      ------------------      MID SIZED SCREEN      ------------------      */
+
+@media screen and (min-width:1000px){
+
+html,body{
+    letter-spacing: .02rem;
+    line-height: 1.75rem;
+}
+
+
+
+/*  Header and Main Navigation  */
+
+header{
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.projectHeader{
+    position: relative;
+}
+
+
+#logo{
+    margin-left: .1rem;
+}
+
+header .menu{
+    min-width: 300px;
+}
+
+
+
+/*      Footer      */
+
+.aboutFooter{
+    margin-top: 275px;
+}
+
+
+footer a{
+    font-size: 	0.875rem;
+}
+
+.copyright{
+    font-size: 	0.75rem;
+}
+
+
+
+
+
+/*    ------------  Landing Page   ------------   */
+
+/*    Hero    */
+
+.intro{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; 
+    position: absolute;
+    top: 35%;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+
+.heroGreeting{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+
+.heroMessage{
+    font-size: 1.15rem;
+    margin-top: 3%;
+}
+
+
+#heroButton{
+    font-size: .75em;
+    letter-spacing: .05rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 10em;
+    padding-bottom: .5rem;  
+}
+
+
+/*    Projects Gallery    */
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.projectImg{
+    width: 55%;
+}
+
+.projectDetails{
+    width: 43%;
+    padding-left: 2%;
+    margin-top: -1%;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 2rem;
+    float: right;
+}
+
+
+h2{
+    font-size: 1.75rem;
+}
+
+
+.description{
+    font-size: .95rem;
+    line-height: 1.85rem;
+    font-weight: 200;
+}
+
+
+
+
+
+
+/*    ------------  Projects Page   ------------   */
+
+.projectContainer{
+    width: 70%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.smallProjectContainer{
+    width: 30%;
+    margin: 0 auto;
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.HalfSize{
+    width: 48%;
+    margin-right: 1.5%;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+.projectSpecs{
+    width: 23%;
+    margin-right: 1%;
+    margin-top: 1%;
+    display: inline-block;
+    float: left;
+}
+
+.projectTitle{
+    font-size: 2.75rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.projectTitleSmall{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+
+p{
+    font-size: 1.1rem;
+    line-height: 1.95rem;
+    letter-spacing: .025rem;
+}
+
+.caption{
+    font-size: 0.75rem;
+}
+
+.LLButton{
+    font-size: .85rem;
+}
+
+.thirtyButton{
+    font-size: .85rem;
+}
+
+
+
+/*    ------------  About Page   ------------   */
+
+
+
+h1{
+    font-size: 2.25rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.aboutMessage{
+    line-height: 1.95rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+.about{
+    width: 50%;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.aboutContainer{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutDetails{
+    width: 47%;
+    margin: 0 auto;
+    position: relative;
+    float: right;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+}
+
+.resume{
+    font-size: 1rem;
+}
+
+.skills{
+    width: 23%;
+    margin-right: 1%;
+    margin-top: 1%;
+    display: inline-block;
+    float: left;
+}
+
+
+.skillList{
+    line-height: 1.75rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+
+
+/*    ------------  Contact Page   ------------   */
+
+.contactContainer{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2.5rem;
+    margin-top: 5rem;
+}
+
+.contactForm{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2.75rem;
+    margin-bottom: 5rem;
+}
+
+.contactGraph{
+    font-size: 1rem;
+}
+
+
+#name{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#email{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#message{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+#button{
+    width: 50%;
+    float: left;
+    margin-top: 1%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/*      ------------------      X-LARGE SIZED SCREEN      ------------------      */
+
+@media screen and (min-width:1500px){
+
+html,body{
+    font-size: .9rem;
+    letter-spacing: .02rem;
+    line-height: 1.75rem;
+}
+
+
+
+/*    Header and Main Navigation    */
+
+header{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.projectHeader{
+    position: relative;
+}
+
+#logo{
+    margin-left: .1rem;
+}
+
+header .menu{
+    min-width: 550px;
+}
+
+header .menu a{
+    font-size: 1.1rem;
+}
+
+
+
+/*    Footer    */
+
+footer a{
+    font-size: 0.875rem;
+}
+
+.copyright{
+    font-size: 0.875rem;
+}
+
+
+
+
+/*    ------------  Landing Page   ------------   */
+
+/*    Hero    */
+
+.intro{
+    width: 50%; 
+    position: absolute;
+    top: 35%;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.heroGreeting{
+    font-size: 4em;
+}
+
+.heroMessage{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 1%;
+}
+
+#heroButton{
+    font-size: .75em;
+    letter-spacing: .05rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    padding-bottom: .5rem;
+}
+
+
+
+/*    Projects Gallery    */
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+
+.projectImg{
+    width: 60%;
+}
+
+
+.projectDetails{
+    width: 38%;
+    padding-left: 2%;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+
+h2{
+    font-size: 2rem;
+}
+
+
+.description{
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+
+
+
+
+/*    ------------  Projects Page   ------------   */
+
+.projectContainer{
+    width: 58%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+
+.projectSpecs{
+    width: 23%;
+    margin-right: 1%;
+    margin-top: 1%;
+    display: inline-block;
+    float: left;
+}
+
+.projectTitle{
+    font-size: 2.75rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.projectTitleSmall{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+
+p{
+    font-size: 1.1rem;
+    line-height: 1.95rem;
+    letter-spacing: .025rem;
+    font-weight: 200;
+}
+
+.caption{
+    font-size: 0.875rem;
+}
+
+.LLButton{
+    font-size: 1rem;
+}
+
+.thirtyButton{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/*    ------------  About Page   ------------   */
+
+
+.aboutContainer{
+    width: 58%;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.about{
+    width: 50%;
+    display: inline-block;
+}
+
+.aboutDetails{
+    width: 47%;
+    margin: 0 auto;
+    margin-left: 2%;
+    display: inline-block;
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+}
+
+.aboutMessage{
+    line-height: 2.25rem;
+    font-size: 1.1rem;
+}
+
+.skillList{
+    font-size: 1rem;
+}
+
+
+
+
+/*    ------------  Contact Page   ------------   */
+
+.contactContainer{
+    width: 58%;
+}
+
+.contactForm{
+    width: 58%;
+}
+
+.contactGraph{
+    font-size: 1.1rem;
+}
+
+
+}

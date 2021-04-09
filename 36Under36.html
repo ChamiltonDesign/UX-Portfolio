@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>36 Under 36</title>
+    <link rel="stylesheet" href="css/UXportfolio.css">
+    <script src="js/UXPortfolio.js"></script>
+    <script src="https://kit.fontawesome.com/a3eade934b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mainContainer">
+    <header class="projectHeader">
+        <a id="logo" href="index.html"><img src="imgs/CH_Logo.png" alt="Site Logo"></a>
+        <nav class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a id="current" href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+
+    <section>
+        <div class="projectContainer">
+        <img src="imgs/36Under36/36Cover.jpg" alt="George Washington Bridge" style="width: 100%"><br><br>
+        <h1 class="projectTitle">36 Under 36</h1>
+        <h2 class="projectTitleSmall">Editorial</h2>
+        <p>Each year The Jewish Week creates a special issue, that highlights 36 Jewish individuals under the age of 36, making a difference in their community. I was asked to design the cover for the 2020 issue. For this project I collaborated with a fellow designer by using the images she created for the web articles in my cover design.</p><br>
+        
+        <div class="projectSpecs">
+            <h4>My role</h4>
+            <p>Visual Designer</p>
+        </div>
+        <div class="projectSpecs">
+            <h4>Client</h4>
+            <p>Jewish Week</p>
+        </div>
+        <div class="projectSpecs">
+            <h4>Project Timeline</h4>
+            <p>1 week</p>
+        </div>
+        <div class="projectSpecs">
+            <h4>Year</h4>
+            <p>2020</p>
+        </div>
+
+        </div><br><br><br><br><br><br><br>
+    </section>
+    
+
+    <section>
+        <div class="projectContainer">
+            <div class="smallProjectContainer">
+            <img src="imgs/36Under36/Headshot1.jpg" alt="Portrait" style="width: 100%"></div>
+            <div class="smallProjectContainer">
+            <img src="imgs/36Under36/Headshot2.jpg" alt="Portrait" style="width: 100%"></div>
+            <div class="smallProjectContainer">
+            <img src="imgs/36Under36/Headshot3.jpg" alt="Portrait" style="width: 100%"></div>
+            <div class="smallProjectContainer">
+            <img src="imgs/36Under36/Headshot4.jpg" alt="Portrait" style="width: 100%"></div>
+            <div class="smallProjectContainer">
+            <img src="imgs/36Under36/Headshot5.jpg" alt="Portrait" style="width: 100%"></div>
+            <div class="smallProjectContainer">
+            <img src="imgs/36Under36/Headshot6.jpg" alt="Portrait" style="width: 100%"></div>
+            <p class="caption">Digital Assets By Janice Hwang</p>
+        </div>
+        <br><br><br><br>
+        
+
+        <div class="projectContainer">
+            <h2 class="projectTitleSmall">Process</h2>
+            <p>We worked on this project during the pandemic, and the editorial team wanted to include a special feature for the first responders. I was a little inspired by social distancing, 
+            due to working from home at the time, so I really wanted to incorporate this into the design in some way. The editorial team liked the concept and chose a headline for the cover.</p><br>
+        </div>
+
+        <div class="projectContainer">
+        <img src="imgs/36Under36/36Cover_Sketches2.jpg" alt="Sketches By Hand" style="width: 100%">
+        <p class="caption">Sketches</p>
+        </div>
+
+        <div class="projectContainer">
+        <img src="imgs/36Under36/36Cover_Final.jpg" alt="Digital Sketches" style="width: 100%">
+        <p class="caption">Final Cover</p>
+        </div>
+
+        <div class="projectContainer">
+        <img src="imgs/36Under36/36Web_Mockup.jpg" alt="Digital Sketches" style="width: 100%">
+        <p class="caption">Web Versions</p>
+        </div>
+
+        <div class="projectContainer">
+        <img src="imgs/36Under36/36Web_Mockup2.jpg" alt="Digital Sketches" style="width: 100%">
+        <p class="caption">Web Versions</p>
+        </div>
+
+        <div class="projectContainer">
+        <a class="thirtyButton" href="index.html">&nbsp; Back Home &nbsp;</a>
+        </div> 
+    </section>
+
+
+
+    <footer class="home">
+        <span>
+            <a href="http://www.linkedin.com/in/clarissa-hamilton" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> 
+            <a href="https://www.instagram.com/rizzathegreat" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </span><br>
+        <span><a href="index.html">Work</a></span> 
+        <span><a href="about.html">About</a></span>
+        <span><a href="contact.html">Contact</a></span>
+        <p class="copyright">© 2021 Clarissa Hamilton</p>
+    </footer>
+
+    </div>
+<script>
+    // Javascript for sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+    
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+    });
+    
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+    });
+</script>
+
+</body>
+</html>

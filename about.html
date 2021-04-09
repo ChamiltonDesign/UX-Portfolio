@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="css/UXportfolio.css">
+    <script src="js/UXPortfolio.js"></script>
+    <script src="https://kit.fontawesome.com/a3eade934b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="projectHeader">
+        <a id="logo" href="index.html"><img src="imgs/CH_Logo.png" alt="Site Logo"></a>
+        <nav class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a id="current" href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+
+
+    <section>
+    <div class="aboutContainer">
+    <img class="about" src="imgs/About.jpg" alt="Photo of Clarissa">
+    <div class="aboutDetails">
+    <h1>Nice To Meet You!</h1>
+    <p class="aboutMessage">My name is Clarissa Hamilton. I'm a UX Designer based in NYC. I have a background in Graphic Design and Illustration, with over 8 years of experience creating content for a variety of platforms. Currently, I'm exploring the possibilities of web and mobile design by creating meaningful digital experiences.</p>
+    <br>
+    <a class="resume" href="imgs/CHResume2021_WebVersion.pdf" target="_blank" rel="noreferrer noopener">Download Resume</a>
+    </div>
+    </div>
+    </section>
+    
+
+    <section>
+    <div class="aboutContainer">
+        <h2>Skills & Programs</h2>
+        <div class="skills">
+            <p class="skillList">UX / UI Design</p>  
+            <p class="skillList">Web Design</p>
+            <p class="skillList">Graphic Design</p>
+            <p class="skillList">Illustration</p>
+        </div>
+
+        <div class="skills">
+            <p class="skillList">Photoshop</p>  
+            <p class="skillList">Illustrator</p>
+            <p class="skillList">Indesign</p>
+            <p class="skillList">Figma</p>
+        </div>
+
+        <div class="skills">
+            <p class="skillList">Sketch</p>  
+            <p class="skillList">Adobe XD</p>
+            <p class="skillList">Balsamiq</p>
+            <p class="skillList">Invision</p>
+        </div>
+
+        <div class="skills">
+            <p class="skillList">Webflow</p>
+            <p class="skillList">HTML</p>  
+            <p class="skillList">CSS</p>
+            <p class="skillList">JavaScript</p>
+        </div>
+    </div>
+    </section>
+    
+        
+        
+    <footer class="aboutFooter">
+        <span>
+            <a href="http://www.linkedin.com/in/clarissa-hamilton" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> 
+            <a href="https://www.instagram.com/rizzathegreat" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </span><br>
+        <span><a href="index.html">Work</a></span> 
+        <span><a href="about.html">About</a></span>
+        <span><a href="contact.html">Contact</a></span>
+        <p class="copyright">© 2021 Clarissa Hamilton</p>
+    </footer>
+
+<script>
+    // Javascript for sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+    
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+    });
+    
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+    });
+</script>
+
+</body>
+</html>
